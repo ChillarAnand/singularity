@@ -6,7 +6,7 @@
 ;; Maintainer: ChillarAnand(Anand Reddy Pandikunta)
 ;; Created: Wed Jul  8 17:33:36 2015 (+0530)
 ;; Version: 0.1
-;; Package-Requires: ((helm "1.7.5") (helm-chrome "1.131226") (helm-github-stars "1.3.2") (helm-dired-recent-dirs "0.1") (key-chord "0.6"))
+;; Package-Requires: ((helm "1.7.5") (helm-chrome "1.131226") (helm-github-stars "1.3.2") (helm-dired-recent-dirs "0.1") (key-chord "0.6") (helm-projectile "0.12.0")))
 
 ;; Last-Updated:
 ;;           By:
@@ -20,13 +20,17 @@
 ;;
 ;;; Commentary:
 ;;
-;;
+;;     Singularity provides a single function which does everything.
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Change Log:
 ;;
+;; Version 0.1:
+;;     * Added singularity core
+;;     * Included projectile, github, recent-dirs, chrome sources
 ;;
+;; 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; This program is free software: you can redistribute it and/or modify
@@ -48,7 +52,7 @@
 
 (require 'helm)
 (require 'helm-chrome)
-;; (require 'helm-descbinds)
+(require 'helm-projectile)
 (require 'helm-github-stars)
 (require 'helm-dired-recent-dirs)
 (require 'key-chord)
