@@ -7,6 +7,10 @@ Read more about [singularity](https://github.com/ChillarAnand/emacsism/blob/mast
 
 ## Install
 
+### Dependencies
+
+Singularity uses helm reverse dependencies for sources. So you have to install `helm`, `helm-chrome`, `helm-projectile`, `helm-github-stars`, `helm-dired-recent-dirs` and `key-chord`.
+
 ### Github
 
 ```shell
